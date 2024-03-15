@@ -15,10 +15,10 @@ export default function UserList(){
             </thead>
             <tbody className="bg-gray-200 ">
                 <tr>
-                    <td className="border-y-2 px-4 py-2 border-indigo-600">Juan</td>
-                    <td className="border-y-2 px-4 py-2 border-indigo-600">Perez</td>
-                    <td className="border-y-2 px-4 py-2 border-indigo-600">juan@correo.com</td>
-                    <td className="border-y-2 px-4 py-2 border-indigo-600">124545</td>
+                    <td className="border-y-2 px-4 py-2 border-indigo-600">James</td>
+                    <td className="border-y-2 px-4 py-2 border-indigo-600">Rodriguez</td>
+                    <td className="border-y-2 px-4 py-2 border-indigo-600">james@correo.com</td>
+                    <td className="border-y-2 px-4 py-2 border-indigo-600">123123123</td>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">
                         <img className="size-40 transition-transform duration-1000 transform hover:scale-110 max-w-none"
                             src="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/jxn3zttbkrvxudzifk6b"/></td>
