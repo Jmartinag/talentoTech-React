@@ -9,16 +9,16 @@ const users = [
         "email": "luis@correo.com",
         "password": "111222333444555666777888999",
     }
-
 ]
+
+/**  Método para usar el createSlice de reduxToolkit*/
 export const userSlice = createSlice({
     name: 'users',
-    initialState: users,
+   initialState: users,
     reducers: {
         addUser: (state, action) => {
             state.push(action.payload)
         }
-
     }
 })
 

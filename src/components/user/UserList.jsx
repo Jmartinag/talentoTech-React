@@ -1,9 +1,11 @@
-import {useSelector, useDispatch} from 'react-redux';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useGetUsersQuery } from '../../features/api/apiSlice';
 
 export default function UserList(){
-/** Obtiene el estado de la variable */
-    const users = useSelector(state => state.users)
+
+    /** Obtiene el estado de una variable con Redux */
+    // const users = useSelector(state => state.users)
+    const {data: users, isError, isLoading, error } = useGetUsersQuery()
     console.log(users)
 
     return (
@@ -20,7 +22,7 @@ export default function UserList(){
                 </tr>
             </thead>
             <tbody className="bg-gray-200 ">
-                {users.map(user =>(
+                {users.map(user => (
                 <tr key={user._id}>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">{user.name}</td>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">{user.lastname}</td>
@@ -42,7 +44,7 @@ export default function UserList(){
                     </div>
                     </td>
                 </tr>
-                ))}                
+                ))}
             </tbody>
         </table>
         </div>
