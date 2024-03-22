@@ -56,7 +56,7 @@ export const apiSlice = createApi({
             invalidatesTags: ["Users"]
         }),
         login: builder.mutation({
-            query: (body) =>({
+            query: (body) => ({
                 url: 'login',
                 method: 'POST',
                 body: body
