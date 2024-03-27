@@ -48,7 +48,7 @@ function ButtonExample(){
 export default function Example() {
 
     const saludar = () => {
-      alert("hola")
+      alert("Hola...")
     }
   
     const mostrarTexto = (e) => {
