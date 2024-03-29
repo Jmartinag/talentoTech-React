@@ -28,19 +28,19 @@ export default function Header() {
           <>
             <li>
               <Link to="/" className="hover:text-blue-500">
-                Inicio
+                Home
               </Link>
             </li>
             <li>
               <Link to="/user" className="hover:text-blue-500">
-                Usuarios
+                Users
               </Link>
             </li>
           </>
         )}
         <li>
           <Link to="/create-user" className="hover:text-blue-500">
-            Crear Usuario
+            Create User
           </Link>
         </li>
       </ul>

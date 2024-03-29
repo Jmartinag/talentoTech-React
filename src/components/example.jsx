@@ -6,7 +6,7 @@ function Profile({user}) {
     return (
       <>
         <h1>{user.name}</h1>
-        <br />
+        <br/>
         <img
           className="avatar"
           src={user.imageUrl}
@@ -16,7 +16,8 @@ function Profile({user}) {
             height: user.imageSize,
             backgroundColor: 'black'
           }}
-        />      
+        />  
+        <br/>    
       </>
     );
 }
@@ -36,11 +37,11 @@ function ButtonExample(){
     <>
       <button className="bg-blue-500 hover:bg-blue-700 rounded
                          text-blue-50 font-bold py-2 px-4" 
-              onClick={() => dispatch(increaseNumber())}>Sumar</button>
+              onClick={() => dispatch(increaseNumber())}>Add</button>
       <button className="bg-red-500 hover:bg-red-700 rounded
                          text-red-50 font-bold py-2 px-4" 
-              onClick={() => dispatch(decreaseNumber())}>Restar</button>
-      <p> El contador va en: {number}</p>
+              onClick={() => dispatch(decreaseNumber())}>Subtract</button>
+      <p> The counter is at: {number}</p>
     </>
   );
 }
@@ -48,7 +49,7 @@ function ButtonExample(){
 export default function Example() {
 
     const saludar = () => {
-      alert("Hola...")
+      alert("Hello...!")
     }
   
     const mostrarTexto = (e) => {
@@ -88,13 +89,14 @@ export default function Example() {
           <Profile key={user.name} user={user}/>
         ))}
         <br/>
-        <button onClick={() => saludar()}>Enviar</button>    
+        <button className="bg-gray-600 hover:bg-gray-400 rounded text-blue-50 font-bold py-2 px-4" 
+                onClick={() => saludar()}>Send</button>    
         <input type="text" onChange={mostrarTexto} onKeyUp={keyUp} />  
+        <br/>
         <br/>
         <ButtonExample/>
         <ButtonExample/>
         <ButtonExample/>
-        
       </div>
     )
   }
