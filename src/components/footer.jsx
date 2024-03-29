@@ -29,7 +29,7 @@ export default function Footer(){
             </div>
 
             <p className="text-white-800 mt-4">
-            © 2024 Proyecto Talento Tech - Todos los derechos reservados
+            © 2024 JAMA Soft - Todos los derechos reservados
             </p>
 
         </div>
