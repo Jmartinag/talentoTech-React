@@ -29,7 +29,7 @@ export default function Login(){
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Bienvenido",
+                    title: "Welcome",
                     showConfirmButton: false,
                     timer: 1500
                 }).then(() => {
@@ -45,7 +45,7 @@ export default function Login(){
         <div className="max-w-lg w-full mx-auto px-5 py-5">
             {!error ? null : 
                 (<div className="flex justify-center bg-slate-100 text-red-500 font-bold">
-                    Datos Invalidos
+                    Invalid Data
             </div>
             )}
             <form onSubmit={handleSubmit} className=" shadow-md rounded pt-6 pb-10 mb-4 px-10">
@@ -73,7 +73,7 @@ export default function Login(){
                                     focus:invalid:border-pink-500 focus:invalid:ring-pink-500" />
                 </div>
                 <div className="flex justify-center">
-                    <button type="submit" className="bg-blue-500 hover:bg-blue-700 rounded text-blue-50 font-bold py-2 px-4">Iniciar Sesion</button>
+                    <button type="submit" className="bg-blue-500 hover:bg-blue-700 rounded text-blue-50 font-bold py-2 px-4">Log In</button>
                 </div>
             </form>
         </div>

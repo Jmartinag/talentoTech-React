@@ -42,7 +42,7 @@ export default function ChangePassword(){
                     Swal.fire({
                         position: "top-end",
                         icon: "error",
-                        title: "Error actualizando la contraseña",
+                        title: "Error updating password",
                         showConfirmButton: false,
                         timer: 1500
                       })
@@ -50,7 +50,7 @@ export default function ChangePassword(){
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
-                        title: "Contraseña actualizada Correctamente",
+                        title: "Password updated successfully",
                         showConfirmButton: false,
                         timer: 1500
                     })
@@ -72,7 +72,7 @@ export default function ChangePassword(){
                             placeholder="Password" 
                             className="shadow appearance-none border rounded w-full focus:shadow-outline" />
                             {isError ?
-                                <span className="text-red-600">La contraseña actual no es correcta</span>
+                                <span className="text-red-600">The current password is not correct</span>
                                 : null} 
                 </div>
                 <div className="mb-4">
@@ -95,7 +95,7 @@ export default function ChangePassword(){
                             className="shadow appearance-none border rounded w-full focus:shadow-outline" 
                             onChange={handleChangeRepeatNewPassword}/>
                             {notEqualPassword ?
-                                <span className="text-red-600">Las contraseñas no coinciden</span>
+                                <span className="text-red-600">Passwords do not match</span>
                                 : null} 
                 </div>
                 <div className="flex justify-center">

@@ -37,7 +37,7 @@ export default function UserFormEdit(){
                 Swal.fire({
                     position: "top-end",
                     icon: "error",
-                    title: "El usuario no pudo ser actualizado, por favor verifique los datos",
+                    title: "The user could not be updated, please check the data",
                     showConfirmButton: false,
                     timer: 1500
                   })
@@ -45,7 +45,7 @@ export default function UserFormEdit(){
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Usuario Actualizado Correctamente",
+                    title: "User Updated Successfully",
                     showConfirmButton: false,
                     timer: 1500
                 }).then(() => {
@@ -56,7 +56,7 @@ export default function UserFormEdit(){
             Swal.fire({
                 position: "top-end",
                 icon: "error",
-                title: "El usuario no pudo ser actualizado, por favor verifique los datos",
+                title: "The user could not be updated, please check the data",
                 showConfirmButton: false,
                 timer: 1500
               })

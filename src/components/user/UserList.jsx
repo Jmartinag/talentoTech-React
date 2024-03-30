@@ -10,12 +10,12 @@ export default function UserList(){
     const [deleteUser] = useDeleteUserMutation();
     const handleDelete = (user) => {
         Swal.fire({
-            title: `¿Estas seguro que deseas eliminar el Usuario ${user.name} ${user.lastname}?`,
+            title: `¿Are you sure you want to delete the User ${user.name} ${user.lastname}?`,
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Confirmar"
+            confirmButtonText: "Confirm"
           }).then((result) => {
             if (result.isConfirmed) {
                 deleteUser(user._id)              
@@ -38,9 +38,9 @@ export default function UserList(){
             <thead>
                 <tr className="bg-slate-500">
                     <th className="px-4 py-2 text-white">Name</th>
-                    <th className="px-4 py-2 text-white">LastName</th>
+                    <th className="px-4 py-2 text-white">Last Name</th>
                     <th className="px-4 py-2 text-white">Email</th>
-                    <th className="px-4 py-2 text-white">Idetification</th>
+                    <th className="px-4 py-2 text-white">Identification</th>
                     <th className="px-4 py-2 text-white">Avatar</th>
                     <th className="px-4 py-2 text-white">Actions</th>
                 </tr>
@@ -59,14 +59,19 @@ export default function UserList(){
                     <div className="inline-flex rounded-md shadow-sm" role="group">
                         <Link to={`/user/${user._id}`} 
                                 className="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border
-                                             border-gray-900 rounded-s-lg hover:bg-gray-900 hover:text-white 
-                                             focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white
-                                             dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">Edit</Link>
+                                           border-gray-900 rounded-s-lg hover:bg-gray-900 hover:text-white 
+                                           focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white
+                                           dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                            Edit
+                        </Link>
                         <button type="button" 
                                 onClick={() => {
                                     handleDelete(user)
                                 }}
-                                className="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t border-b border-gray-900 hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+                                className="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border-t 
+                                           border-b border-gray-900 hover:bg-gray-900 hover:text-white 
+                                           focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white 
+                                           dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
                             Delete
                         </button>
                     </div>

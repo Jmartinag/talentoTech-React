@@ -31,7 +31,7 @@ export default function UserFormCreate(){
                 Swal.fire({
                     position: "top-end",
                     icon: "error",
-                    title: "El usuario no pudo ser registrado, por favor verifique los datos",
+                    title: "The user could not be registered, please verify the data",
                     showConfirmButton: false,
                     timer: 1500
                   })
@@ -44,7 +44,7 @@ export default function UserFormCreate(){
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Usuario Creado Correctamente",
+                    title: "User created successfully",
                     showConfirmButton: false,
                     timer: 1500
                 }).then(() => {
