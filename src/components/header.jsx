@@ -36,6 +36,11 @@ export default function Header() {
                 Users
               </Link>
             </li>
+            <li>
+              <Link to="/create-house" className="hover:text-blue-500">
+                Crear casas
+              </Link>
+            </li>
           </>
         )}
         <li>
