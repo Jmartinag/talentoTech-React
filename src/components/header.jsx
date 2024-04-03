@@ -48,6 +48,9 @@ export default function Header() {
             Create User
           </Link>
         </li>
+        <Link to="/chat" className="hover:text-blue-500">
+            Chat
+        </Link>
       </ul>
       {/* DropDown Usuario Logueado */}
       <div className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 px-5">
