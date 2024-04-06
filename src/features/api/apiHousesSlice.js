@@ -4,7 +4,7 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 export const apiHousesSlice = createApi({
     reducerPath: "housesApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://locahost:3000',
+        baseUrl: 'https://nodejs-henna-iota.vercel.app/',
         prepareHeaders: (headers, {getState}) => {
             const token = getState().auth.token
             if(token){
