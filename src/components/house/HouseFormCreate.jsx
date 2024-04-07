@@ -38,7 +38,7 @@ export default function HouseFormCreate(){
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
-                    title: "Usuario Creado Correctamente",
+                    title: "Casa Creado Correctamente",
                     showConfirmButton: false,
                     timer: 1500
                 }).then(() => {
