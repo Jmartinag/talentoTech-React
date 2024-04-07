@@ -27,7 +27,7 @@ export default function HouseFormEdit(){
             id: e.target.id.value
         }
         try {
-            const response = await updateUser(user)
+            const response = await updateHouse(house)
             if(file){
                 const formData = new FormData();
                 formData.append("file", file[0])
@@ -49,7 +49,7 @@ export default function HouseFormEdit(){
                     showConfirmButton: false,
                     timer: 1500
                 }).then(() => {
-                    navigate('/user') // Hacemos la redireccion
+                    navigate('/house') // Hacemos la redireccion
                 });
             }
         } catch (error) {
