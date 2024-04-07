@@ -8,7 +8,7 @@ export default function HouseFormEdit(){
 
     const navigate = useNavigate(); // Instanciamos la vaiable de useNavigate
     const params = useParams(); // Instanciamos la variable para obtener los parametros por URL
-    const [updateHouse] = useUpdateUserMutation()
+    const [updateHouse] = useUpdateHouseMutation()
 
     const [file, setFile] = useState(null);
     const [uploadAvatar] = useUploadAvatarMutation();
@@ -21,9 +21,9 @@ export default function HouseFormEdit(){
         e.preventDefault();        
         const house = {
             _id: params.id, // Seteamos en _id por el que me llega como parametro
-            name: e.target.name.value,
-            lastname: e.target.lastname.value,
-            email: e.target.email.value,
+            addres: e.target.addres.value,
+            department: e.target.department.value,
+            city: e.target.city.value,
             id: e.target.id.value
         }
         try {
